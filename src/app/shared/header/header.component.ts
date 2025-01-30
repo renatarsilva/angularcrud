@@ -9,4 +9,13 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
+  exibirLogo: boolean = true;
+  itensMenu = [
+    { label: 'Home', link: '' },
+    { label: 'Cadastro', link: '/pessoas/incluir' },
+    { label: 'Login', link: '/pessoas/login' },
+    { label: 'Sobre', link: '/sobre' },
+    { label: 'Ajuda', link: '/ajuda' }
+  ]
+
 }
