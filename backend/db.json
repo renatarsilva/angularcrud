@@ -1,0 +1,16 @@
+{
+"pessoas": [
+{
+"id": 1,
+"nome": "Maki",
+"sobrenome": "Zenin",
+"dtNascimento": "2005-01-10"
+},
+{
+"id": 2,
+"nome": "Ichigo",
+"sobrenome": "Kurosaki",
+"dtNascimento": "2007-08-14"
+}
+]
+}
