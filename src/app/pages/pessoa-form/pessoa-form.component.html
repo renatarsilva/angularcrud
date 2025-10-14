@@ -1,6 +1,9 @@
 <div class="content-container">
   <h1>{{ titulo }}</h1>
   <form>
+
+    <label for="input-id">ID</label><br>
+    <input class="input-simples" id="input-id" name="input-id" placeholder="Digite o ID" type="text" [(ngModel)]="pessoa.id"/>
     <label for="input-nome">Nome</label><br>
     <input class="input-simples" id="input-nome" name="input-nome" placeholder="Digite o primeiro nome" type="text" />
     <label for="input-sobrenome">Sobrenome</label><br>
