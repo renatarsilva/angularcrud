@@ -24,4 +24,17 @@ export class PessoaService {
   incluir(pessoa:Pessoa):Observable<Pessoa>{
     return this.httpClient.post<Pessoa>(this.API, pessoa);
   }
-}
+
+  editar(pessoa:Pessoa):Observable<Pessoa>{
+    const url = `${this.API}/${pessoa.id}`
+    return this.httpClient.put<Pessoa>(url, pessoa)
+  }
+
+  buscarPorId(id:number):Observable<Pessoa | undefined>{
+    return this.httpClient.get<Pessoa>(this.API + `/${id}`);
+  }
+  excluir(id:number):Observable<Pessoa>{
+    return this.httpClient.delete<Pessoa>(this.API + `/${id}`);
+  }
+  }
+

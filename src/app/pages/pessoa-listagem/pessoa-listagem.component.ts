@@ -22,4 +22,12 @@ export class PessoaListagemComponent implements OnInit {
                         this.listaPessoas = pessoas;
   });
   }
+
+  excluir(id:number){
+    if(id){
+      this.service.excluir(id).subscribe(() => {
+        window.location.reload()
+      })
+    }
+  }
 }
