@@ -23,7 +23,7 @@ export class ProdutoFormComponent {
     });
 
     //
-    onSumbmit(){
+    onSubmit(){
     if(this.formulario.valid){
       alert('Formulário enviado com sucesso! \n'+
         JSON.stringify(this.formulario.value));
