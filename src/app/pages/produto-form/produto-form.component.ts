@@ -14,10 +14,10 @@ import {MatInputModule} from '@angular/material/input'
 export class ProdutoFormComponent {
 
     formulario = new FormGroup({
-      nome: new FormControl([Validators.required, 
+      nome: new FormControl('',[Validators.required, 
                              Validators.minLength(3)   
       ]),
-      descricao: new FormControl([Validators.required, 
+      descricao: new FormControl('',[Validators.required, 
                              Validators.minLength(3)   
       ]),
     });
